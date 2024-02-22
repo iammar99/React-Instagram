@@ -1,0 +1,190 @@
+//  --------- Phone img --------
+img.phone-img {
+    height: 550px;
+}
+
+// ------------ Form ----------
+
+.form-container {
+    min-height: 550px;
+    width: 40%;
+}
+
+form {
+    border: 1px solid #dbdbdb;
+    margin: 31px;
+    min-height: 314px;
+    padding: 38px 26px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+input.form-control {
+    width: 76%;
+    margin: 8px 0;
+    border-radius: 1px;
+    height: 41px;
+    background-color: #fafafa;
+    font-size: smaller;
+}
+
+.login-btn {
+    background-color: #4cb5f9;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    width: 76%;
+    margin: 8px 0;
+    border-radius: 9px;
+    height: 41px;
+    font-size: smaller;
+}
+
+.login-btn:hover {
+    background-color: #1778f2;
+    color: white;
+    cursor: pointer;
+}
+
+
+
+/* ----------- Or ----------- */
+
+span.or {
+    font-size: 11px;
+    position: relative;
+    color: #73777c;
+    margin: 19px 0px;
+}
+
+.or:before {
+    content: " ";
+    height: 1px;
+    width: 98px;
+    background: #dbdbdb;
+    display: block;
+    position: absolute;
+    left: 27px;
+    top: 7px;
+}
+
+.or:after {
+    content: " ";
+    height: 1px;
+    width: 94px;
+    background: #dbdbdb;
+    display: block;
+    position: absolute;
+    right: 26px;
+    bottom: 7px;
+}
+
+/* ----------- Login with faceBook ----------- */
+
+img.facebook-logo.image-fluid {
+    width: 14px;
+    margin-right: 5px;
+}
+
+span.facebook-login {
+    width: 55%;
+    color: #385fa0;
+    font-weight: 800;
+    font-size: smaller;
+}
+
+/* ----------- Forgot Password ----------- */
+
+a.forgot-password {
+    text-decoration: none;
+    color: #00376b;
+    font-size: x-small;
+}
+
+/* ----------- Forgot Password ----------- */
+
+.signup-container {
+    border: 1px solid #dbdbdb;
+    margin: 31px;
+    margin-top: 3%;
+    min-height: 72px;
+    font-size: x-small;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+        color: #00b2f9;
+        font-size: x-small;
+        font-weight: 600;
+        text-decoration: none;
+    }
+}
+
+/* ----------- Get App ----------- */
+
+.getApp {
+    margin: 0px 31px;
+    min-height: 72px;
+    font-size: x-small;
+    text-align: center;
+}
+
+/* ----------- Images ----------- */
+
+.installpic {
+    display: flex;
+    justify-content: space-around;
+    width: 69%;
+    margin: 10px auto;
+}
+
+img._aa5q {
+    width: 100px;
+    height: 38px;
+}
+
+
+
+
+/* ----------- Media queries ----------- */
+
+@media screen and (max-width:1199px) {
+    .form-container{
+        width: 50%;
+    }
+}
+
+// @media screen and (max-width:991px) {
+//     .form-container{
+//         width: 50%;
+//     }
+// }
+
+@media screen and (max-width:877px) {
+    .form-container{
+        width: 80%;
+    }
+    img.phone-img {
+        display: none;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .form-container , form , .signup-container , .getApp{
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        border: 0;
+    }
+}
+
+// Error Msg
+
+span.error-msg {
+    text-align: center;
+    font-size: smaller;
+    margin: 9px 30px;
+    color: red;
+}

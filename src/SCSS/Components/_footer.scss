@@ -1,0 +1,17 @@
+.link-container {
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    min-height: fit-content;
+
+    a {
+        text-decoration: none;
+        color: #958888;
+        margin: 0 10px;
+        font-size: x-small;
+        font-weight: 600;
+    }
+    a.underline:hover{
+        text-decoration: underline #958888;
+    }
+}

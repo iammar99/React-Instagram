@@ -1,0 +1,147 @@
+// .signUp-container{
+//     .form-container {
+//         min-height: 550px;
+//         width: 40%;
+//     }
+    
+//     form {
+//         border: 1px solid #dbdbdb;
+//         margin: 31px;
+//         min-height: 314px;
+//         padding: 38px 26px;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         margin-bottom: 0;
+//     }
+// }
+
+
+// ------------ Login With Facebook ------------
+.facebook-btn {
+    background-color: #0095f6;
+    border: 0;
+    color: white;
+    font-weight: bold;
+    width: 76%;
+    margin: 8px 0;
+    border-radius: 9px;
+    height: 41px;
+    font-size: smaller;
+}
+
+.facebook-btn:hover {
+    background-color: #1778f2;
+    color: white;
+}
+
+/* ----------- Or ----------- */
+
+span.or {
+    font-size: 11px;
+    position: relative;
+    color: #73777c;
+    margin: 19px 0px;
+}
+
+.or:before {
+    content: " ";
+    height: 1px;
+    width: 98px;
+    background: #737373;
+    display: block;
+    position: absolute;
+    left: 27px;
+    top: 7px;
+}
+
+.or:after {
+    content: " ";
+    height: 1px;
+    width: 94px;
+    background: #737373;
+    display: block;
+    position: absolute;
+    right: 26px;
+    bottom: 7px;
+}
+
+/*------ Password Display / Hide ------*/
+
+//*------ Settings ------*/
+.password-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.checkbox-container {
+    --color: #a5a5b0;
+    --size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+}
+
+
+.checkbox-container .eye {
+    position: absolute;
+    animation: keyframes-fill 0.5s;
+    right: 17px;
+    font-size: small;
+}
+
+.checkbox-container .eye-slash {
+    position: absolute;
+    animation: keyframes-fill .5s;
+    display: none;
+    right: 17px;
+    font-size: small;
+}
+
+/* ------ On check event ------ */
+.checkbox-container input:checked~.eye {
+    display: none;
+}
+
+.checkbox-container input:checked~.eye-slash {
+    display: block;
+}
+
+/* ------ Hide the default checkbox ------ */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* ------ Animation ------ */
+@keyframes keyframes-fill {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* ------ Paragraph With Links ------ */
+p.links {
+    font-size: x-small;
+    text-align: center;
+    color: #737373;
+    a{
+        color: #00379b;
+        text-decoration: none;
+    }
+}
